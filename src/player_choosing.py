@@ -38,22 +38,22 @@ def Player_Choosing(back_ground_number):
     second_fighter_choosing = -1
 
     player_first_image = pygame.image.load(
-        "images/icons/3.jpg").convert_alpha()
+        "../images/icons/3.jpg").convert_alpha()
     player_second_image = pygame.image.load(
-        "images/icons/1.jpg").convert_alpha()
+        "../images/icons/1.jpg").convert_alpha()
     player_third_image = pygame.image.load(
-        "images/icons/6.jpg").convert_alpha()
+        "../images/icons/6.jpg").convert_alpha()
     player_fourth_image = pygame.image.load(
-        "images/icons/2.jpg").convert_alpha()
+        "../images/icons/2.jpg").convert_alpha()
     player_fifth_image = pygame.image.load(
-        "images/icons/woman.jpg").convert_alpha()
+        "../images/icons/woman.jpg").convert_alpha()
     player_sixth_image = pygame.image.load(
-        "images/icons/5.jpg").convert_alpha()
+        "../images/icons/5.jpg").convert_alpha()
 
-    back_ground = pygame.image.load("images/back/bg1.png").convert_alpha()
+    back_ground = pygame.image.load("../images/back/bg1.png").convert_alpha()
     back_ground = pygame.transform.scale(back_ground, (back_ground.get_width() // 6, back_ground.get_height() // 7))
 
-    menu = pygame.image.load("images/menu/knight1.jpg").convert_alpha()
+    menu = pygame.image.load("../images/menu/knight1.jpg").convert_alpha()
     menu = pygame.transform.scale(menu, (menu.get_width() * 1, menu.get_height() * 1.15))
 
     location_first = pygame.transform.scale(player_first_image,
@@ -79,10 +79,10 @@ def Player_Choosing(back_ground_number):
     player_sixth_image.get_width() // 7, player_sixth_image.get_height() // 7))
     location_sixth.set_colorkey((255, 255, 255))
 
-    fighter1_choosing = pygame.image.load("images/icons/first.png").convert_alpha()
+    fighter1_choosing = pygame.image.load("../images/icons/first.png").convert_alpha()
     fighter1_choosing = pygame.transform.scale(fighter1_choosing,
                                               (fighter1_choosing.get_width() // 7, fighter1_choosing.get_height() // 7))
-    fighter2_choosing = pygame.image.load("images/icons/second.png").convert_alpha()
+    fighter2_choosing = pygame.image.load("../images/icons/second.png").convert_alpha()
     fighter2_choosing = pygame.transform.scale(fighter2_choosing,
                                                (fighter2_choosing.get_width() // 7, fighter2_choosing.get_height() // 7))
     first_button = Player(65, 90, location_first)

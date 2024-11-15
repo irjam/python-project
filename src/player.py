@@ -27,13 +27,13 @@ def game(back, player1, player2):
     last_count_update = pygame.time.get_ticks()
     # load background image
     if back == 1:
-        bg_image = pygame.image.load("images/back/game_background_1.png").convert_alpha()
+        bg_image = pygame.image.load("../images/back/game_background_1.png").convert_alpha()
     elif back == 2:
-        bg_image = pygame.image.load("images/back/game_background_2.png").convert_alpha()
+        bg_image = pygame.image.load("../images/back/game_background_2.png").convert_alpha()
     elif back == 3:
-        bg_image = pygame.image.load("images/back/game_background_3.png").convert_alpha()
+        bg_image = pygame.image.load("../images/back/game_background_3.png").convert_alpha()
     elif back == 4:
-        bg_image = pygame.image.load("images/back/game_background_4.png").convert_alpha()
+        bg_image = pygame.image.load("../images/back/game_background_4.png").convert_alpha()
 
     if player1 == 1:
         # define fighter variables
@@ -41,7 +41,7 @@ def game(back, player1, player2):
         FIGHTER1_SCALE = 3
         FIGHTER1_OFFSET = [45, 35]
         FIGHTER1_DATA = [FIGHTER1_SIZE, FIGHTER1_SCALE, FIGHTER1_OFFSET]
-        fighter1_sheet = pygame.image.load("assets/images/fighter1/sprites/fighter1.png").convert_alpha()
+        fighter1_sheet = pygame.image.load("../assets/images/fighter1/sprites/fighter1.png").convert_alpha()
         fighter1_sheet.set_colorkey((255, 255, 255))
         # define number of steps in each animation
         FIGHTER1_ANIMATION_STEPS = [10, 8, 3, 7, 6, 3, 11]  #1 индеец
@@ -50,7 +50,7 @@ def game(back, player1, player2):
         FIGHTER1_SIZE = 150
         FIGHTER1_OFFSET = [60, 55]
         FIGHTER1_DATA = [FIGHTER1_SIZE, FIGHTER1_SCALE, FIGHTER1_OFFSET]
-        fighter1_sheet = pygame.image.load("assets/images/fighter2/sprites/fighter2.png").convert_alpha()
+        fighter1_sheet = pygame.image.load("../assets/images/fighter2/sprites/fighter2.png").convert_alpha()
         fighter1_sheet.set_colorkey((255, 255, 255))
         FIGHTER1_ANIMATION_STEPS = [8, 8, 2, 5, 5, 3, 8]  #2 амазонка
     elif player1 == 3:
@@ -58,7 +58,7 @@ def game(back, player1, player2):
         FIGHTER1_SIZE = 160
         FIGHTER1_OFFSET = [60, 55]
         FIGHTER1_DATA = [FIGHTER1_SIZE, FIGHTER1_SCALE, FIGHTER1_OFFSET]
-        fighter1_sheet = pygame.image.load("assets/images/fighter3/sprites/fighter3.png").convert_alpha()
+        fighter1_sheet = pygame.image.load("../assets/images/fighter3/sprites/fighter3.png").convert_alpha()
         fighter1_sheet.set_colorkey((255, 255, 255))
         FIGHTER1_ANIMATION_STEPS = [8, 8, 2, 6, 6, 4, 6]  #3 самурай
     elif player1 == 4:
@@ -66,7 +66,7 @@ def game(back, player1, player2):
         FIGHTER1_SIZE = 128
         FIGHTER1_OFFSET = [60, 45]
         FIGHTER1_DATA = [FIGHTER1_SIZE, FIGHTER1_SCALE, FIGHTER1_OFFSET]
-        fighter1_sheet = pygame.image.load("assets/images/fighter4/sprites/fighter4.png").convert_alpha()
+        fighter1_sheet = pygame.image.load("../assets/images/fighter4/sprites/fighter4.png").convert_alpha()
         fighter1_sheet.set_colorkey((255, 255, 255))
         FIGHTER1_ANIMATION_STEPS = [10, 6, 2, 4, 5, 3, 8]  #4 рыцарь
     elif player1 == 5:
@@ -74,7 +74,7 @@ def game(back, player1, player2):
         FIGHTER1_SIZE = 116
         FIGHTER1_OFFSET = [60, 35]
         FIGHTER1_DATA = [FIGHTER1_SIZE, FIGHTER1_SCALE, FIGHTER1_OFFSET]
-        fighter1_sheet = pygame.image.load("assets/images/fighter5/sprites/fighter5.png").convert_alpha()
+        fighter1_sheet = pygame.image.load("../assets/images/fighter5/sprites/fighter5.png").convert_alpha()
         fighter1_sheet.set_colorkey((255, 255, 255))
         FIGHTER1_ANIMATION_STEPS = [11, 8, 3, 7, 7, 4, 11]  #5 рыцарь2
     elif player1 == 6:
@@ -82,7 +82,7 @@ def game(back, player1, player2):
         FIGHTER1_SIZE = 160
         FIGHTER1_OFFSET = [60, 70]
         FIGHTER1_DATA = [FIGHTER1_SIZE, FIGHTER1_SCALE, FIGHTER1_OFFSET]
-        fighter1_sheet = pygame.image.load("assets/images/fighter6/sprites/fighter6.png").convert_alpha()
+        fighter1_sheet = pygame.image.load("../assets/images/fighter6/sprites/fighter6.png").convert_alpha()
         fighter1_sheet.set_colorkey((255, 255, 255))
         FIGHTER1_ANIMATION_STEPS = [8, 8, 2, 8, 8, 3, 7]  #6 маг
 
@@ -92,7 +92,7 @@ def game(back, player1, player2):
         FIGHTER2_SCALE = 3
         FIGHTER2_OFFSET = [45, 35]
         FIGHTER2_DATA = [FIGHTER2_SIZE, FIGHTER2_SCALE, FIGHTER2_OFFSET]
-        fighter2_sheet = pygame.image.load("assets/images/fighter1/sprites/fighter1.png").convert_alpha()
+        fighter2_sheet = pygame.image.load("../assets/images/fighter1/sprites/fighter1.png").convert_alpha()
         fighter2_sheet.set_colorkey((255, 255, 255))
         FIGHTER2_ANIMATION_STEPS = [10, 8, 3, 7, 6, 3, 11]  #1 индеец
     elif player2 == 2:
@@ -100,7 +100,7 @@ def game(back, player1, player2):
         FIGHTER2_SIZE = 150
         FIGHTER2_OFFSET = [60, 55]
         FIGHTER2_DATA = [FIGHTER2_SIZE, FIGHTER2_SCALE, FIGHTER2_OFFSET]
-        fighter2_sheet = pygame.image.load("assets/images/fighter2/sprites/fighter2.png").convert_alpha()
+        fighter2_sheet = pygame.image.load("../assets/images/fighter2/sprites/fighter2.png").convert_alpha()
         fighter2_sheet.set_colorkey((255, 255, 255))
         FIGHTER2_ANIMATION_STEPS = [8, 8, 2, 5, 5, 3, 8]  #2 амазонка
     elif player2 == 3:
@@ -108,7 +108,7 @@ def game(back, player1, player2):
         FIGHTER2_SIZE = 160
         FIGHTER2_OFFSET = [60, 55]
         FIGHTER2_DATA = [FIGHTER2_SIZE, FIGHTER2_SCALE, FIGHTER2_OFFSET]
-        fighter2_sheet = pygame.image.load("assets/images/fighter3/sprites/fighter3.png").convert_alpha()
+        fighter2_sheet = pygame.image.load("../assets/images/fighter3/sprites/fighter3.png").convert_alpha()
         fighter2_sheet.set_colorkey((255, 255, 255))
         FIGHTER2_ANIMATION_STEPS = [8, 8, 2, 6, 6, 4, 6]  #3 самурай
     elif player2 == 4:
@@ -116,7 +116,7 @@ def game(back, player1, player2):
         FIGHTER2_SIZE = 128
         FIGHTER2_OFFSET = [60, 45]
         FIGHTER2_DATA = [FIGHTER2_SIZE, FIGHTER2_SCALE, FIGHTER2_OFFSET]
-        fighter2_sheet = pygame.image.load("assets/images/fighter4/sprites/fighter4.png").convert_alpha()
+        fighter2_sheet = pygame.image.load("../assets/images/fighter4/sprites/fighter4.png").convert_alpha()
         fighter2_sheet.set_colorkey((255, 255, 255))
         FIGHTER2_ANIMATION_STEPS = [10, 6, 2, 4, 5, 3, 8]  #4 рыцарь
     elif player2 == 5:
@@ -124,7 +124,7 @@ def game(back, player1, player2):
         FIGHTER2_SIZE = 160
         FIGHTER2_OFFSET = [60, 55]
         FIGHTER2_DATA = [FIGHTER2_SIZE, FIGHTER2_SCALE, FIGHTER2_OFFSET]
-        fighter2_sheet = pygame.image.load("assets/images/fighter5/sprites/fighter5.png").convert_alpha()
+        fighter2_sheet = pygame.image.load("../assets/images/fighter5/sprites/fighter5.png").convert_alpha()
         fighter2_sheet.set_colorkey((255, 255, 255))
         FIGHTER2_ANIMATION_STEPS = [11, 8, 3, 7, 7, 4, 11]  #5 рыцарь2
     elif player2 == 6:
@@ -132,7 +132,7 @@ def game(back, player1, player2):
         FIGHTER2_SIZE = 160
         FIGHTER2_OFFSET = [60, 70]
         FIGHTER2_DATA = [FIGHTER2_SIZE, FIGHTER2_SCALE, FIGHTER2_OFFSET]
-        fighter2_sheet = pygame.image.load("assets/images/fighter6/sprites/fighter6.png").convert_alpha()
+        fighter2_sheet = pygame.image.load("../assets/images/fighter6/sprites/fighter6.png").convert_alpha()
         fighter2_sheet.set_colorkey((255, 255, 255))
         FIGHTER2_ANIMATION_STEPS = [8, 8, 2, 8, 8, 3, 7]  #6 маг
 

@@ -33,12 +33,12 @@ class Menu():
 
 def Menu_Function():
     start_image = pygame.image.load(
-        "images/menu/menu.png").convert_alpha()
+        "../images/menu/menu.png").convert_alpha()
     quit_image = pygame.image.load(
-        "images/menu/quit.png").convert_alpha()
+        "../images/menu/quit.png").convert_alpha()
 
 
-    menu = pygame.image.load("images/menu/knight1.jpg").convert_alpha()
+    menu = pygame.image.load("../images/menu/knight1.jpg").convert_alpha()
     menu = pygame.transform.scale(menu, (menu.get_width() * 1, menu.get_height() * 1.15))
 
     quit_image = pygame.transform.scale(quit_image, (quit_image.get_width() // 3, quit_image.get_height() // 3))

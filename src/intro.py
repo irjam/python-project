@@ -23,7 +23,7 @@ def IntroFunction(flag_, counter_, picture_flag_):
 
 def Intro():
     loading_image = pygame.image.load(
-        "images/intro/load.png").convert_alpha()
+        "../images/intro/load.png").convert_alpha()
     loading_image = pygame.transform.scale(loading_image, (loading_image.get_width() // 5, loading_image.get_height() // 5))
     loading_image.set_colorkey((255, 255, 255))
 
@@ -31,21 +31,21 @@ def Intro():
     counter = 0
     picture_flag = True  #эти парметры для гифки
     intro_pictures = [
-        pygame.transform.scale(pygame.image.load('images/intro/cylon_knight_by_oliverink_ddfc1z6.jpg'),
+        pygame.transform.scale(pygame.image.load('../images/intro/cylon_knight_by_oliverink_ddfc1z6.jpg'),
                                (1000, 640)),
-        pygame.transform.scale(pygame.image.load('images/intro/cylon_knight_by_oliverink_ddfc1z62.jpg'),
+        pygame.transform.scale(pygame.image.load('../images/intro/cylon_knight_by_oliverink_ddfc1z62.jpg'),
                                (1000, 640)),
-        pygame.transform.scale(pygame.image.load('images/intro/cylon_knight_by_oliverink_ddfc1z63.jpg'),
+        pygame.transform.scale(pygame.image.load('../images/intro/cylon_knight_by_oliverink_ddfc1z63.jpg'),
                                (1000, 640)),
-        pygame.transform.scale(pygame.image.load('images/intro/cylon_knight_by_oliverink_ddfc1z64.jpg'),
+        pygame.transform.scale(pygame.image.load('../images/intro/cylon_knight_by_oliverink_ddfc1z64.jpg'),
                                (1000, 640)),
-        pygame.transform.scale(pygame.image.load('images/intro/cylon_knight_by_oliverink_ddfc1z65.jpg'),
+        pygame.transform.scale(pygame.image.load('../images/intro/cylon_knight_by_oliverink_ddfc1z65.jpg'),
                                (1000, 640)),
-        pygame.transform.scale(pygame.image.load('images/intro/cylon_knight_by_oliverink_ddfc1z66.jpg'),
+        pygame.transform.scale(pygame.image.load('../images/intro/cylon_knight_by_oliverink_ddfc1z66.jpg'),
                                (1000, 640)),
-        pygame.transform.scale(pygame.image.load('images/intro/cylon_knight_by_oliverink_ddfc1z67.jpg'),
+        pygame.transform.scale(pygame.image.load('../images/intro/cylon_knight_by_oliverink_ddfc1z67.jpg'),
                                (1000, 640)),
-        pygame.transform.scale(pygame.image.load('images/intro/cylon_knight_by_oliverink_ddfc1z68.jpg'),
+        pygame.transform.scale(pygame.image.load('../images/intro/cylon_knight_by_oliverink_ddfc1z68.jpg'),
                                (1000, 640)),
     ]
  

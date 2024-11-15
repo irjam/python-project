@@ -35,21 +35,21 @@ class Back():
 # game loop
 def Background_Choosing():
     location_first_image = pygame.image.load(
-        "images/back/game_background_1.png").convert_alpha()
+        "../images/back/game_background_1.png").convert_alpha()
     location_second_image = pygame.image.load(
-        "images/back/game_background_2.png").convert_alpha()
+        "../images/back/game_background_2.png").convert_alpha()
     location_third_image = pygame.image.load(
-        "images/back/game_background_3.png").convert_alpha()
+        "../images/back/game_background_3.png").convert_alpha()
     location_fourth_image = pygame.image.load(
-        "images/back/game_background_4.png").convert_alpha()
+        "../images/back/game_background_4.png").convert_alpha()
 
-    icon_choosing = pygame.image.load("images/back/choose_icon.png").convert_alpha()
+    icon_choosing = pygame.image.load("../images/back/choose_icon.png").convert_alpha()
     icon_choosing = pygame.transform.scale(icon_choosing, (icon_choosing.get_width() // 6, icon_choosing.get_height() // 6))
 
-    back_ground = pygame.image.load("images/back/bg.png").convert_alpha()
+    back_ground = pygame.image.load("../images/back/bg.png").convert_alpha()
     back_ground = pygame.transform.scale(back_ground, (back_ground.get_width() // 4, back_ground.get_height() // 4))
 
-    menu = pygame.image.load("images/menu/knight1.jpg").convert_alpha()
+    menu = pygame.image.load("../images/menu/knight1.jpg").convert_alpha()
     menu = pygame.transform.scale(menu, (menu.get_width() * 1, menu.get_height() * 1.15))
 
     location_fourth = pygame.transform.scale(location_fourth_image, (location_fourth_image.get_width() // 15, location_fourth_image.get_height() // 15))
